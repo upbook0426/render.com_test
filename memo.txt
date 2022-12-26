@@ -1,0 +1,33 @@
+c:\xampp\htdocs\hunhunに移動
+composer create-project --prefer-dist laravel/laravel プロジェクト名php
+xamppの場合　MySQL欄のAdminからデータベース(phpMyAdmin)が開く
+xampp鯖のURL http://localhost/laravel/プロジェクト名/public
+新規作成→プロジェクト名を入力。utf8mb4_general_ci
+.envファイルを編集
+14行目DB_DATABASEを変更
+php artisan migrateを実行してデータベースに反映
+認証機能
+composer require laravel/breeze --dev
+php artisan breeze:install
+npm install
+cmdでnpm run devしないといけないらしい(Tailwind CSSやVueなどの変更を自動でブラウザに反映してくれます)
+config/app.php内のtimezozneをAsia/Tokyoに、localeをjaに
+https://github.com/askdkc/breezejp
+VSC拡張機能laravel goto viwe
+laravelデバッグバー composer require barryvdh/laravel-debugbar
+@dump(auth::user()) primarykey制約 incrementign 数字が階段になる
+githubにアップされないファイルはグレーアウトしてる
+https://textpro.addisteria.com/text/109/text-show
+Attempt to read property "name" on null ログインしていないからuser=nameがnull
+登録したアカウントはgithubで共有されない？
+syntax error, unexpected variable スペルミスとか、;が足りてないとか
+php artisan make:component 名前　でapp/View/Componentsとresources/views/componentsにそれぞれファイルができる
+ctrl+/コメントアウト
+ctrl+bs
+alt+↑↓
+ctrl+alt+↓↑
+ctrl+Fページ内検索
+ctrl+P全体検索
+ctrl+F2 選択ワードの全マッチを選択
+Shift+Alt+↓↑ 行を複製
+ctrl+B サイドバー
